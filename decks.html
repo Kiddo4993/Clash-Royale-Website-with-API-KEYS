@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Decks - Home</title>
+    <style>
+    @font-face {
+        font-family: 'ClashRegular';
+        src: url('fonts/Clash_Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ClashBold';
+        src: url('fonts/Clash_Bold.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            fontFamily: {
+            clash: ['ClashRegular', 'sans-serif'],
+            clashBold: ['ClashBold', 'sans-serif'],
+            }
+        }
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav class="bg-[#010C20] w-full p-4 flex items-center justify-between font-clash">
+        <div class="flex items-center">
+            <img src="images/crown-logo.png" alt="logo" class="h-8 w-8 mr-2">
+            <a href="homepage.html" class="text-white text-md md:text-lg font-bold">Clash Royale Decks</a>
+        </div>
+
+        <div class="flex space-x-6 text-md md:text-lg md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+            <a href="decks.html" class="text-white hover:underline">Decks</a>
+            <a href="leaderboard.html" class="text-white hover:underline">Leaderboard</a>
+        </div>
+    </nav>
+
+    <div class="bg-white h-screen flex flex-col justify-between items-center">
+        <div class="py-20 font-clashBold text-blue-600 flex text-6xl"> 
+            <img src="images/decks.png" alt="decks">
+            <p class="pl-6 pt-10 flex flex-col">Top Decks
+                <a href="https://link.clashroyale.com/en/?clashroyale://copyDeck?deck=26000060;27000010;26000096;26000016;28000024;26000005;28000015;28000002&l=Royals&tt=159000004" class="bg-blue-900 px-6 py-4 rounded-2xl text-white text-2xl font-bold mx-auto transition delay-150 duration-300 ease-in-out font-clash w-64 inline-block mt-6 hover:bg-yellow-500 font-clash font-bold py-3 px-6 rounded-md shadow text-center border-1 border-black transition delay-300 duration-300 ease-in-out">
+                    See Best Deck
+                </a>
+
+            </p>
+        </div>
+    </div>
+
+    <footer class="bg-black h-22 flex text white items-center font-bold font-clash p-2">
+        <img src="images/crown-logo.png">
+        <a href="homepage.html" class="text-white text-md md:text-lg font-bold p-2">
+            Clash Royale Decks
+        </a>
+        
+
+    </footer>
+</body>
+</html>
